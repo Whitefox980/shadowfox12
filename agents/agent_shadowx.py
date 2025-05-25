@@ -45,13 +45,23 @@ def run_payloads(target_id, base_url, tip, payload_list):
     return hits
 
 def get_mutations(tip):
+    technique_map = {
+        "XSS": "basic-mix",
+        "SSRF": "ssrf-bypass",
+        "SQLi": "sql-obf",
+        "LFI": "lfi-basic"
+    }
+
+    technique = technique_map.get(tip.upper())
+    if not technique:
+        return []
+
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
-    c.execute("SELECT mutated_payload FROM mutations WHERE technique = 'basic-mix'")
+    c.execute('SELECT mutated_payload FROM mutations WHERE technique = ?', (technique,))
     rows = c.fetchall()
     conn.close()
-    return [row[0] for row in rows if tip in row[0].lower() or tip == "XSS"]
-
+    return [row[0] for row in rows]
 def advisor(target_id):
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
@@ -79,6 +89,18 @@ def generate_report(target_id):
 
 def run_auto(target_id):
     base_url = get_target(target_id)
+    # Signature Payload Injection
+    signature_payload = "<h1>Chupko was here - ShadowFox AI</h1>"
+    test_url = f"{base_url}?test={quote(signature_payload)}"
+    try:
+        r = requests.get(test_url, timeout=5)
+        reflected = 1 if signature_payload in r.text else 0
+        db_insert.insert_scan_result(target_id, "SIGNATURE", signature_payload, reflected, str(r.status_code), len(r.text))
+        if reflected:
+            print(f"[SIGNATURE-HIT] {signature_payload}")
+    except Exception as e:
+        print(f"[!] Greška sa signature payloadom: {e}")
+
     if not base_url:
         print("[!] Meta nije pronađena.")
         return

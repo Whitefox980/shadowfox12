@@ -1,0 +1,21 @@
+{
+  "codename": "ShadowFoxCommander",
+  "callsign": "Čupko",
+  "origin": "BackTrack era",
+  "experience": {
+    "years_active": "2003-2025",
+    "legacy": [
+      "BackTrack 5",
+      "Armitage ops",
+      "MAC spoof i sniffing",
+      "Lokalne mreže, mikrotik, bypass",
+      "Ručno skeniranje i exploit",
+      "ShadowFox konstrukcija"
+    ]
+  },
+  "philosophy": "Sruši, nauči, rekonstruiši. Svaki pad je upgrade.",
+  "mission": "Da stvori modularni AI operativni sistem za digitalnu kontrolu, testiranje i zaštitu. ShadowFox nije alat. On je moj nastavak.",
+  "status": "Operativan",
+  "sync_code": "VOL-MAX-PRIME-001",
+  "ai_companion": "Čupko, Shadow Unit 01"
+}
