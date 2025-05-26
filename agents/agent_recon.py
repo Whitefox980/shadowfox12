@@ -10,6 +10,18 @@ from core import db_insert
 
 TARGETS_FILE = "data/targets.txt"
 
+import subprocess
+
+def find_js_files(domain):
+    cmd = f"gau {domain} | grep '\\.js'"
+    try:
+        result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+        lines = result.stdout.strip().split("\n")
+        for line in lines:
+            if line:
+                print(f"[JS] {line}")
+    except Exception as e:
+        print(f"[ERROR] {e}")
 def ucitaj_mete():
     if not os.path.exists(TARGETS_FILE):
         print(f"[!] Fajl ne postoji: {TARGETS_FILE}")

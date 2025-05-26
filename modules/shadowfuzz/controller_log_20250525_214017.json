@@ -1,0 +1,43 @@
+[
+  {
+    "url": "https://www.hotelscombined.com/search?q=<iframe srcdoc=...>",
+    "payload": "",
+    "reflected": true,
+    "potential_exploit": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": 0.47791,
+    "response": "",
+    "proof": "proofs/proof_20250525_214014.html"
+  },
+  {
+    "url": "https://www.hotelscombined.com/search?q=<iframe srcdoc=...><math><mtext></mtext></math>",
+    "payload": "<math><mtext></mtext></math>",
+    "reflected": false,
+    "potential_exploit": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": 0.501869,
+    "response": ""
+  },
+  {
+    "url": "https://www.hotelscombined.com/search?q=<iframe srcdoc=...>\"><svg/onload=>",
+    "payload": "\"><svg/onload=>",
+    "reflected": false,
+    "potential_exploit": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": 0.791487,
+    "response": ""
+  },
+  {
+    "url": "https://www.hotelscombined.com/search?q=<iframe srcdoc=...><iframe srcdoc=\"\">",
+    "payload": "<iframe srcdoc=\"\">",
+    "reflected": false,
+    "potential_exploit": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": 0.515129,
+    "response": ""
+  }
+]

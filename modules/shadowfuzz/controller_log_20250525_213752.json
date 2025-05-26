@@ -1,0 +1,34 @@
+[
+  {
+    "url": "modules/shadowfuzz/ShadowFuzzController.py((env) ) root@localhost:~/shadowfox12# python3 shadowcore.py",
+    "payload": "((env) ) root@localhost:~/shadowfox12# python3 shadowcore.py",
+    "reflected": false,
+    "potential_exploit": false,
+    "error": "No connection adapters were found for 'modules/shadowfuzz/ShadowFuzzController.py((env) ) root@localhost:~/shadowfox12# python3 shadowcore.py'",
+    "response": ""
+  },
+  {
+    "url": "modules/shadowfuzz/ShadowFuzzController.py\"><svg/onload=((env) ) root@localhost:~/shadowfox12# python3 shadowcore.py>",
+    "payload": "\"><svg/onload=((env) ) root@localhost:~/shadowfox12# python3 shadowcore.py>",
+    "reflected": false,
+    "potential_exploit": false,
+    "error": "No connection adapters were found for 'modules/shadowfuzz/ShadowFuzzController.py\"><svg/onload=((env) ) root@localhost:~/shadowfox12# python3 shadowcore.py>'",
+    "response": ""
+  },
+  {
+    "url": "modules/shadowfuzz/ShadowFuzzController.py<iframe srcdoc=\"((env) ) root@localhost:~/shadowfox12# python3 shadowcore.py\">",
+    "payload": "<iframe srcdoc=\"((env) ) root@localhost:~/shadowfox12# python3 shadowcore.py\">",
+    "reflected": false,
+    "potential_exploit": false,
+    "error": "No connection adapters were found for 'modules/shadowfuzz/ShadowFuzzController.py<iframe srcdoc=\"((env) ) root@localhost:~/shadowfox12# python3 shadowcore.py\">'",
+    "response": ""
+  },
+  {
+    "url": "modules/shadowfuzz/ShadowFuzzController.py<math><mtext>((env) ) root@localhost:~/shadowfox12# python3 shadowcore.py</mtext></math>",
+    "payload": "<math><mtext>((env) ) root@localhost:~/shadowfox12# python3 shadowcore.py</mtext></math>",
+    "reflected": false,
+    "potential_exploit": false,
+    "error": "No connection adapters were found for 'modules/shadowfuzz/ShadowFuzzController.py<math><mtext>((env) ) root@localhost:~/shadowfox12# python3 shadowcore.py</mtext></math>'",
+    "response": ""
+  }
+]

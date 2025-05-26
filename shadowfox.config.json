@@ -1,0 +1,14 @@
+{
+  "paths": {
+    "logs": "logs",
+    "intel": "intel",
+    "recon_data": "recon_data",
+    "reports": "reports",
+    "replay": "reports/replay",
+    "db": "intel/intel.db",
+    "payloads": "payloads/top_payloads.json"
+  },
+  "project": "ShadowFox12",
+  "version": "1.0",
+  "default_logfile": "logs/fuzz_results.jsonl"
+}

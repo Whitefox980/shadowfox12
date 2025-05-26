@@ -1,0 +1,39 @@
+[
+  {
+    "url": "https://www.checkfelix.com/search?q=",
+    "payload": "",
+    "reflected": true,
+    "status_code": 404,
+    "response_size": 205492,
+    "timestamp": 0.48873,
+    "response": "<!DOCTYPE html>\n<html lang='de-at' dir='ltr'>\n<head>\n<meta name=\"r9-version\" content=\"R768d\"/><meta name=\"r9-built\" content=\"20250522.060040\"/><meta name=\"r9-rendered\" content=\"Sat, 24 May 2025 12:49:33 GMT\"/><meta name=\"r9-build-number\" content=\"73\"/><link rel=\"stylesheet\" href=\"https://content.r9cdn.net/res/combined.css?v=c98c1c43a5cd3cf277ad9bb84165a2bb7f0376d4&amp;cluster=5\"/><link rel=\"stylesheet\" href=\"https://content.r9cdn.net/res/combined.css?v=0004b2e7091e0fd4bb887ae9bd4c20ce7063a377&amp;cluster=5\"/><style type=\"text/css\">\n@font-face {\nfont-family: 'MuseoSansRounded-Thin';\nsrc: url(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-100-webfont.woff2?v=038155b9d0ba4d1b898aff3556c139fa55a16b84&cluster=5\") format('woff2'),\nurl(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-100-webfont.woff?v=baed86c5f518483b3b1923653914453aa249c5f3&cluster=5\") format('woff');\nfont-weight: 100;\nfont-style: normal;\nfont-display: swap;\n}\n@font-face {\nfont-family: 'MuseoSansRounded-Light';\nsrc: url(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-300-webfont.woff2?v=48dfc1f10445bc3f0cf76578ed3c1f826e12b475&cluster=5\") format('woff2'),\nurl(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-300-webfont.woff?v=5e759eec8d02d790882f41def4fa91421bb7cbd3&cluster=5\") format('woff');\nfont-weight: 300;\nfont-style: normal;\nfont-display: swap;\n}\n@font-face {\nfont-family: 'MuseoSansRounded-Regular';\nsrc: url(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-500-webfont.woff2?v=f39e37ce0436adea89801ae5de2368d5dc65a263&cluster=5\") format('woff2'),\nurl(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-500-webfont.woff?v=cfbe171824167512914b58b69181fe4a4fbef5ec&cluster=5\") format('woff');\nfont-weight: 500;\nfont-style: normal;\nfont-display: swap;\n}\n@font-face {\nfont-family: 'MuseoSansRounded-Medium';\nsrc: url(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-700-webfont.woff2?v=9d761d2eeb5e730f85e31ebe20bca5671287729e&cluster=5\") format('woff2'),\nurl(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-700-webfont.woff?v=c2deee1401fc63407f2e811341f190ef4bec23a0&cluster=5\") format('woff');\nfont-weight: 700;\nfont-style: normal;\nfont-display: swap;\n}\n@font-face {\nfont-family: 'MuseoSansRounded-Bold';\nsrc: url(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-900-webfont.woff2?v=24df92ed6e161da9b9fb33a9cddf90710a9567fd&cluster=5\") format('woff2'),\nurl(\"https://content.r9cdn.",
+    "proof": "proofs/proof_20250525_195308.html"
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<math><mtext></mtext></math>",
+    "payload": "<math><mtext></mtext></math>",
+    "reflected": false,
+    "status_code": 404,
+    "response_size": 205492,
+    "timestamp": 0.127308,
+    "response": "<!DOCTYPE html>\n<html lang='de-at' dir='ltr'>\n<head>\n<meta name=\"r9-version\" content=\"R768d\"/><meta name=\"r9-built\" content=\"20250522.060040\"/><meta name=\"r9-rendered\" content=\"Sat, 24 May 2025 12:49:33 GMT\"/><meta name=\"r9-build-number\" content=\"73\"/><link rel=\"stylesheet\" href=\"https://content.r9cdn.net/res/combined.css?v=c98c1c43a5cd3cf277ad9bb84165a2bb7f0376d4&amp;cluster=5\"/><link rel=\"stylesheet\" href=\"https://content.r9cdn.net/res/combined.css?v=0004b2e7091e0fd4bb887ae9bd4c20ce7063a377&amp;cluster=5\"/><style type=\"text/css\">\n@font-face {\nfont-family: 'MuseoSansRounded-Thin';\nsrc: url(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-100-webfont.woff2?v=038155b9d0ba4d1b898aff3556c139fa55a16b84&cluster=5\") format('woff2'),\nurl(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-100-webfont.woff?v=baed86c5f518483b3b1923653914453aa249c5f3&cluster=5\") format('woff');\nfont-weight: 100;\nfont-style: normal;\nfont-display: swap;\n}\n@font-face {\nfont-family: 'MuseoSansRounded-Light';\nsrc: url(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-300-webfont.woff2?v=48dfc1f10445bc3f0cf76578ed3c1f826e12b475&cluster=5\") format('woff2'),\nurl(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-300-webfont.woff?v=5e759eec8d02d790882f41def4fa91421bb7cbd3&cluster=5\") format('woff');\nfont-weight: 300;\nfont-style: normal;\nfont-display: swap;\n}\n@font-face {\nfont-family: 'MuseoSansRounded-Regular';\nsrc: url(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-500-webfont.woff2?v=f39e37ce0436adea89801ae5de2368d5dc65a263&cluster=5\") format('woff2'),\nurl(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-500-webfont.woff?v=cfbe171824167512914b58b69181fe4a4fbef5ec&cluster=5\") format('woff');\nfont-weight: 500;\nfont-style: normal;\nfont-display: swap;\n}\n@font-face {\nfont-family: 'MuseoSansRounded-Medium';\nsrc: url(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-700-webfont.woff2?v=9d761d2eeb5e730f85e31ebe20bca5671287729e&cluster=5\") format('woff2'),\nurl(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-700-webfont.woff?v=c2deee1401fc63407f2e811341f190ef4bec23a0&cluster=5\") format('woff');\nfont-weight: 700;\nfont-style: normal;\nfont-display: swap;\n}\n@font-face {\nfont-family: 'MuseoSansRounded-Bold';\nsrc: url(\"https://content.r9cdn.net/res/resources/horizon/ui/server/components/SsrPageHead/brands/checkfelixat/MuseoSansRounded-900-webfont.woff2?v=24df92ed6e161da9b9fb33a9cddf90710a9567fd&cluster=5\") format('woff2'),\nurl(\"https://content.r9cdn."
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=\"><svg/onload=>",
+    "payload": "\"><svg/onload=>",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": 0.615595,
+    "response": ""
+  },
+  {
+    "url": "https://www.checkfelix.com/search?q=<iframe srcdoc=\"\">",
+    "payload": "<iframe srcdoc=\"\">",
+    "reflected": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": 0.464744,
+    "response": ""
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://www.hotelscombined.com/search?q=<iframe srcdoc=...>\"><svg/onload=[\u2713] POTENCIJALNI HIT! \u2192 Snimljen dokaz: proofs/proof_20250525_214014.html>",
+    "payload": "\"><svg/onload=[\u2713] POTENCIJALNI HIT! \u2192 Snimljen dokaz: proofs/proof_20250525_214014.html>",
+    "reflected": false,
+    "potential_exploit": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": 0.530438,
+    "response": ""
+  },
+  {
+    "url": "https://www.hotelscombined.com/search?q=<iframe srcdoc=...><iframe srcdoc=\"[\u2713] POTENCIJALNI HIT! \u2192 Snimljen dokaz: proofs/proof_20250525_214014.html\">",
+    "payload": "<iframe srcdoc=\"[\u2713] POTENCIJALNI HIT! \u2192 Snimljen dokaz: proofs/proof_20250525_214014.html\">",
+    "reflected": false,
+    "potential_exploit": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": 0.484455,
+    "response": ""
+  },
+  {
+    "url": "https://www.hotelscombined.com/search?q=<iframe srcdoc=...><math><mtext>[\u2713] POTENCIJALNI HIT! \u2192 Snimljen dokaz: proofs/proof_20250525_214014.html</mtext></math>",
+    "payload": "<math><mtext>[\u2713] POTENCIJALNI HIT! \u2192 Snimljen dokaz: proofs/proof_20250525_214014.html</mtext></math>",
+    "reflected": false,
+    "potential_exploit": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": 0.467848,
+    "response": ""
+  },
+  {
+    "url": "https://www.hotelscombined.com/search?q=<iframe srcdoc=...>[\u2713] POTENCIJALNI HIT! \u2192 Snimljen dokaz: proofs/proof_20250525_214014.html",
+    "payload": "[\u2713] POTENCIJALNI HIT! \u2192 Snimljen dokaz: proofs/proof_20250525_214014.html",
+    "reflected": false,
+    "potential_exploit": false,
+    "status_code": 406,
+    "response_size": 0,
+    "timestamp": 0.483196,
+    "response": ""
+  }
+]

