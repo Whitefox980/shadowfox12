@@ -1,3 +1,6 @@
+
+from fastapi.staticfiles import StaticFiles
+
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
@@ -11,7 +14,7 @@ app = FastAPI()
 templates = Environment(loader=FileSystemLoader("templates"))
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
-
+app.mount("/reports", StaticFiles(directory="reports"), name="reports")
 LOG_PATH = get_path("logs") + "/shadowfuzz_ai.jsonl"
 PDF_PATH = get_path("reports") + "/ShadowFox_Report.pdf"
 ZIP_PATH = "proof_pack_target.zip"
@@ -47,3 +50,10 @@ async def dashboard(request: Request):
             "Email": "❌"
         }
     )
+@app.get("/api/pdf-reports")
+def list_pdf_reports():
+    pdf_dir = get_path("reports")
+    files = [f for f in os.listdir(pdf_dir) if f.endswith(".pdf")]
+    files.sort(key=lambda f: os.path.getmtime(os.path.join(pdf_dir, f)), reverse=True)
+    latest = files[:10]
+    return [{"filename": f, "timestamp": datetime.fromtimestamp(os.path.getmtime(os.path.join(pdf_dir, f))).isoformat()} for f in latest]

@@ -119,7 +119,7 @@ def menu():
             from agents import agent_mutator_ai
             agent_mutator_ai.generate_mutated_payloads()
         elif choice == "16":
-    	    from agents import agent_shadowfuzz_ai
+            from agents import agent_shadowfuzz_ai
             dom = input("Unesi domen iz baze (npr. www.target.com): ").strip()
             base = input("Unesi bazni URL (https://target.com): ").strip()
             agent_shadowfuzz_ai.run_shadowfuzz(dom, base)

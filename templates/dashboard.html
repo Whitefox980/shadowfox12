@@ -9,7 +9,23 @@
   <h1>ShadowOS v1.1</h1>
   <h2>Agent: WhiteFox + Chupko</h2>
   <div class="status">AI Control: <span class="on">ACTIVE</span></div>
+<div class="mt-6">
+  <h2 class="text-green-400 text-xl mb-2">Poslednjih 10 PDF izveštaja:</h2>
+  <ul id="pdf-list" class="text-green-300 list-disc pl-5"></ul>
+</div>
 
+<script>
+  fetch("/api/pdf-reports")
+    .then(res => res.json())
+    .then(data => {
+      const ul = document.getElementById("pdf-list");
+      data.forEach(item => {
+        const li = document.createElement("li");
+        li.innerHTML = `<a href="/reports/${item.filename}" target="_blank">${item.filename}</a> <small>(${item.timestamp})</small>`;
+        ul.appendChild(li);
+      });
+    });
+</script>
   <div class="modules">
     {% for k, v in agent_status.items() %}
       <div class="module">{{k}} → {{v}}</div>

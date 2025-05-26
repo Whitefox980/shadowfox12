@@ -2,7 +2,7 @@ import os
 import zipfile
 from datetime import datetime
 
-def create_zip(source_folder, output_folder="reports"):
+def create_zip(source_folder="reports/replay_ai", output_folder="reports"):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     zip_filename = f"{output_folder}/shadowfox_report_{timestamp}.zip"
 

@@ -1,54 +1,39 @@
-import os, json
 from fpdf import FPDF
-from tools.shadowfox_config import get_path
+import sqlite3
+from datetime import datetime
 
-REPLAY_JSON = get_path("logs") + "/shadowfuzz_ai.jsonl"
-SCREENSHOT_DIR = get_path("reports") + "/replay_ai_screens"
-OUTPUT_PDF = get_path("reports") + "/ShadowFox_Report.pdf"
+def generate_pdf(payload_type='SSRF', output_path=None):
+    conn = sqlite3.connect("shadowfox.db")
+    c = conn.cursor()
+    c.execute("""
+        SELECT payload, reflected, status_code, response_size, timestamp
+        FROM scan_results
+        WHERE payload_type=? AND reflected=1
+        ORDER BY id DESC
+    """, (payload_type,))
+    results = c.fetchall()
+    conn.close()
 
-class PDF(FPDF):
-    def header(self):
-        self.set_font("Arial", "B", 12)
-        self.cell(0, 10, "ShadowFox AI Report", 0, 1, "C")
-        self.ln(5)
-
-    def footer(self):
-        self.set_y(-15)
-        self.set_font("Arial", "I", 8)
-        self.cell(0, 10, f"Page {self.page_no()}", 0, 0, "C")
-
-def generate_pdf_report():
-    if not os.path.exists(REPLAY_JSON):
-        print("[!] Nema AI fuzz loga.")
+    if not results:
+        print(f"[ok] Nema reflektovanih pogodaka za tip: {payload_type}")
         return
 
-    pdf = PDF()
-    pdf.set_auto_page_break(auto=True, margin=15)
+    pdf = FPDF()
     pdf.add_page()
+    pdf.set_font("Arial", size=12)
+    pdf.set_text_color(0, 255, 0)
+    pdf.cell(200, 10, txt=f"ShadowFox Report - {payload_type} Hits", ln=True, align="C")
+    pdf.set_text_color(255, 255, 255)
 
-    with open(REPLAY_JSON, "r") as f:
-        for i, line in enumerate(f):
-            try:
-                data = json.loads(line)
-                if data.get("reflected"):
-                    pdf.set_font("Arial", "B", 11)
-                    pdf.multi_cell(0, 10, f"[{i+1}] {data['url']}", 0)
+    for payload, reflected, status, size, timestamp in results:
+        line = f"[ok] {payload} | Status: {status} | Size: {size} | Time: {timestamp}"
+        pdf.cell(200, 10, txt=line, ln=True)
 
-                    pdf.set_font("Arial", "", 10)
-                    pdf.multi_cell(0, 8, f"Status: {data['status']}")
-                    pdf.multi_cell(0, 8, f"Original: {data['original']}")
-                    pdf.multi_cell(0, 8, f"Mutated: {data['mutated']}")
+    if not output_path:
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_path = f"reports/report_{payload_type}_{timestamp}.pdf"
 
-                    img_path = os.path.join(SCREENSHOT_DIR, f"proof_ai_{i+1}.png")
-                    if os.path.exists(img_path):
-                        try:
-                            pdf.image(img_path, w=100)
-                        except:
-                            pdf.cell(0, 8, "[!] Screenshot nije mogao da se ubaci.", ln=1)
-
-                    pdf.ln(10)
-            except:
-                continue
-
-    pdf.output(OUTPUT_PDF)
-    print(f"[✓] PDF izveštaj sačuvan: {OUTPUT_PDF}")
+    pdf.output(output_path)
+    print(f"[ok] PDF sačuvan: {output_path}")
+if __name__ == "__main__":
+    generate_pdf()
