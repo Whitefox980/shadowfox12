@@ -38,6 +38,33 @@ def run():
         tip, payload, ref, code, size, t = s
         oznaka = "[HIT]" if ref else "     "
         print(f"{oznaka} [{tip}] {payload} | {code} | {size}B | {t}")
+from fpdf import FPDF
+from datetime import datetime
 
+def create_pdf_report(target_id):
+    scanovi = izlistaj_scanove(target_id)
+    if not scanovi:
+        print("[!] Nema skenova za zadati ID.")
+        return
+
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial", size=12)
+
+    pdf.set_text_color(0, 255, 0)
+    pdf.cell(200, 10, txt="ShadowFox AI - Vulnerability Report", ln=True, align="C")
+    pdf.set_text_color(255, 255, 255)
+
+    for s in scanovi:
+        tip, payload, ref, code, size, t = s
+        oznaka = "[HIT]" if ref else "[INFO]"
+        line = f"{oznaka} [{tip}] {payload} | Code: {code} | Size: {size}B | Time: {t}"
+        pdf.cell(200, 10, txt=line, ln=True)
+
+    now = datetime.now().strftime("%Y%m%d_%H%M%S")
+    path = f"reports/report_target_{target_id}_{now}.pdf"
+    pdf.output(path)
+
+    print(f"[+] PDF sačuvan: {path}")
 if __name__ == "__main__":
     run()

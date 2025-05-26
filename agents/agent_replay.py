@@ -63,6 +63,24 @@ def run():
     payload = payloads[pidx][2]
     base_url = [url for tid, url in targets if tid == izbor][0]
     replay(izbor, base_url, payload)
-
+def generate_replay(url, payload):
+    safe_name = url.replace("://", "_").replace("/", "_").replace("?", "_")
+    content = f"""
+    <html>
+      <head><title>Replay Proof</title></head>
+      <body>
+        <h1>URL: {url}</h1>
+        <h2>Payload: {payload}</h2>
+        <p style="color:red;">Chupko was here.. H1:Whitefox980</p>
+      </body>
+    </html>
+    """
+    path = f"reports/replay_ai/{safe_name}.html"
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w") as f:
+        f.write(content)
+    print(f"[✓] Replay sačuvan: {path}")
+def export():
+    return generate_replay
 if __name__ == "__main__":
     run()

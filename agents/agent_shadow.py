@@ -60,6 +60,14 @@ def start_manual():
 
     url = [u for (i, u) in mete if i == izbor][0]
     napadni(izbor, url, tip, payloadi)
+def test_reflection(url, payload):
+    import requests
+    try:
+        response = requests.get(url, timeout=5)
+        return payload in response.text
+    except Exception as e:
+        print(f"[!] Greška pri testiranju refleksije: {e}")
+        return False
 
 if __name__ == "__main__":
     start_manual()

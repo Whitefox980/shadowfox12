@@ -36,6 +36,19 @@ def menu():
         print("7. Auto Recon META")
         print("8. Fuzz endpoints from DB")
         print("9. AI Review fuzz rezultata")
+        print("10. Očisti sistem (Deep Cleaner)")
+        print("11. Izvuci uspešne payload-e (Top Payload Extractor)")
+        print("12. Param Spammer (RCE / LFI / SSRF / XSS parametri)")
+        print("13. SSRF Bypasser modul")
+        print("14. Evaluacija uspešnih fuzz logova (AI analiza)")
+        print("15. Mutacija uspešnih payload-a (AI Mutator)")
+        print("16. ShadowFuzz AI: Mutacija + Endpoint napad")
+        print("17. Generiši AI Replay dokaze (.html)")
+        print("18. Generiši screenshot-ove replay dokaza (.png)")
+        print("19. Generiši PDF izveštaj svih uspešnih pogodaka")
+        print("20. Kreiraj finalni proof paket + ZIP")
+        print("21. Dodaj watermark na sve AI screenshot-ove")
+
         print("0. Exit")
 
         choice = input("Izaberi opciju: ").strip()
@@ -82,6 +95,50 @@ def menu():
         elif choice == "9":
             from agents import agent_ai_reviewer
             agent_ai_reviewer.review_results()
+
+        elif choice == "10":
+            from tools import shadowfox_deepclean
+            shadowfox_deepclean.deep_clean()
+        elif choice == "11":
+            from agents import top_payload_extractor
+            top_payload_extractor.extract_top_payloads()
+        elif choice == "12":
+            from agents import agent_param_spammer
+            dom = input("Unesi domen iz baze (npr. www.target.com): ").strip()
+            base = input("Unesi bazni URL (npr. https://target.com): ").strip()
+            agent_param_spammer.spam_parameters(dom, base)
+        elif choice == "13":
+            from agents import agent_ssrf_bypasser
+            dom = input("Unesi domen iz baze (npr. www.target.com): ").strip()
+            base = input("Unesi bazni URL (npr. https://target.com): ").strip()
+            agent_ssrf_bypasser.bypass_ssrf(dom, base)
+        elif choice == "14":
+            from agents import agent_fuzz_evaluator
+            agent_fuzz_evaluator.evaluate_fuzz_logs()
+        elif choice == "15":
+            from agents import agent_mutator_ai
+            agent_mutator_ai.generate_mutated_payloads()
+        elif choice == "16":
+    	    from agents import agent_shadowfuzz_ai
+            dom = input("Unesi domen iz baze (npr. www.target.com): ").strip()
+            base = input("Unesi bazni URL (https://target.com): ").strip()
+            agent_shadowfuzz_ai.run_shadowfuzz(dom, base)
+        elif choice == "17":
+            from agents import agent_replay_generator
+            agent_replay_generator.generate_replay()
+        elif choice == "18":
+            from agents import agent_replay_screenshot
+            agent_replay_screenshot.generate_screenshots()
+        elif choice == "19":
+            from agents import agent_pdf_report
+            agent_pdf_report.generate_pdf_report()
+        elif choice == "20":
+            from agents import agent_proof_packager
+            agent_proof_packager.build_proof_pack()
+        elif choice == "21":
+            from agents import agent_watermark_screens
+            agent_watermark_screens.add_watermark()
+
         elif choice == "0":
             print("Izlaz...")
             sys.exit()

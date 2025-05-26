@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShadowOS v1.1</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>ShadowOS v1.1</h1>
+  <h2>Agent: WhiteFox + Chupko</h2>
+  <div class="status">AI Control: <span class="on">ACTIVE</span></div>
+
+  <div class="modules">
+    {% for k, v in agent_status.items() %}
+      <div class="module">{{k}} → {{v}}</div>
+    {% endfor %}
+  </div>
+
+  <h3>Poslednjih 10 pogodaka:</h3>
+  <div class="log">
+    {% for log in logs %}
+      <div class="log-item">
+        <code>[{{log.time}}] {{log.status}} → {{log.url}}</code><br>
+        <small>Reflected: {{log.reflected}}, Len: {{log.length}}</small>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="buttons">
+    {% if pdf_exists %}
+      <a href="/reports/ShadowFox_Report.pdf" download>Skini PDF</a>
+    {% endif %}
+    {% if zip_exists %}
+      <a href="/proof_pack_target.zip" download>Skini ZIP</a>
+    {% endif %}
+  </div>
+</body>
+</html>

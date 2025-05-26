@@ -1,0 +1,6 @@
+{
+  "XSS": ["<script>alert(1)</script>"],
+  "LFI": ["../../../../etc/passwd"],
+  "SSRF": ["http://127.0.0.1"],
+  "SQLi": ["' OR 1=1 --"]
+}
